@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-#define LED_PIN  5
+#define LED_PIN  2
 #define COLOR_ORDER GRB
 #define CHIPSET     WS2812B
 #define BRIGHTNESS 64
@@ -11,7 +11,7 @@ const uint8_t kMatrixHeight = 11;
 #define NUM_LEDS (kMatrixWidth * kMatrixHeight)
 CRGB leds[NUM_LEDS];
 
-#define LAST_VISIBLE_LED 102
+#define LAST_VISIBLE_LED 300
 
 uint8_t XY (uint8_t x, uint8_t y) {
   // any out of bounds address maps to the first hidden pixel
